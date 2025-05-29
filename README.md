@@ -1,5 +1,5 @@
 # sky-take-out
-### 注意事项
+## 注意事项
 1.在IDEA中：打开File -> Settings -> Build, Execution, Deployment -> Build Tools -> Maven -> Runner，确保JRE选项设置为JDK11，这是开发用的版本。还有项目结构里的sdk，以及设置里的java编译器里的字节码版本也改一下\
 2.sky-take-out/sky-server/resources/application-dev.yml中的 **数据库用户名、密码**，**阿里云OSS参数**，**Redis参数**（没密码不用写password），**微信小程序参数** 写自己的\
 3.微信小程序测试的时候，调试基础库要选择2.26.2及以下的版本才会弹出教程视频中的申请登录框\
@@ -9,7 +9,7 @@
 7.在我调整了小程序端代码之后，历史订单和最近订单显示仍然有显示错误的bug，并且点击催单之后订单会重复显示\
 8.mp-weixin/project.config.json里需要修改app-id
 
-### 变化点
+## 记录
 1.原本的md5加密改为sha256加密\
 2.新增员工的密码从默认值123456改为取身份证后六位，做了部分身份证校验\
 3.令牌过期时间为了开发方便我延长了很久\
